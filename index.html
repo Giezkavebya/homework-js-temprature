@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/app.css">
+    <title>Temprature Converter</title>
+</head>
+<body>
+    <div class="main-card">
+        <h1>Temprature Converter</h1>
+        <div class="select-temp">
+            <p>Convert</p>
+            <select name="select-input" id="select1" onchange="setFromTemp()">
+                <option value="celcius">Celcius</option>
+                <option value="farenhait">Farenhait</option>
+                <option value="reamur">Reamur</option>
+            </select>
+            <p>to</p>
+            <select name="select-output" id="select2" onchange="setToTemp()">
+                <option value="celcius">Celcius</option>
+                <option value="farenhait">Farenhait</option>
+                <option value="reamur">Reamur</option>
+            </select>
+        </div>
+        <div class="temp-container">
+            <div class="temp">
+                <label for="input-temp">Input</label>
+                <input type="number" id="inputNumb" placeholder="Insert some number">
+            </div>
+            <div class="temp">
+                <label for="output-temp">Result</label>
+                <p id="outputNumb"></p>
+            </div>
+            <button class="clearBtn" id="clearBtn">Clear</button>
+        </div>
+        <form class="change-color" action="">
+            <label for="bg-color">Background Color</label>
+            <input type="text" placeholder="Insert a color" id="colorInput">
+            <button type="button" value="Change" id="change">Change</button>
+        </form>
+    </div>
+    <script src="./color.js"></script>
+    <script src="./convert.js"></script>
+</body>
+</html>

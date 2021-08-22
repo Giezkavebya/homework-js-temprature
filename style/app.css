@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
+/* Color Variable */
+body {
+  background-color: #AAD8D3;
+  color: black;
+}
+
+.main-card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 30px;
+  border-radius: 10px;
+  width: 800px;
+  min-width: 400px;
+  margin: 130px auto;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-card h1 {
+  font-family: "Roboto", sans-serif;
+  color: #132C33;
+}
+
+.select-temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #132C33;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.select-temp p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.temp-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+}
+
+.change-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  margin: 0px 20px;
+  background-color: #126E82;
+  color: white;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #132C33;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="number"], input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  border: 2px solid #126E82;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #126E82;
+}
+
+.temp-container p {
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: #132C33;
+  font-size: 20px;
+}
+
+.change-color button {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  background-color: #132C33;
+}
+
+.temp-container button {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  background-color: #132C33;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.change-color button:hover {
+  background-color: #126E82;
+  cursor: pointer;
+}
+
+.temp-container button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-card {
+    width: 60%;
+  }
+  .select-temp {
+    width: 60%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=app.css.map */

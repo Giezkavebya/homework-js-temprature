@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+/* Color Variable */
+$bgcolor: #AAD8D3;
+$primarycolor:#132C33;
+$secondcolor:#126E82;
+$dark: black;
+$white:white;
+
+// font
+$roboto: 'Roboto', sans-serif;
+$roboto-mono: 'Roboto Mono', monospace;
+
+// Mixin
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@mixin input-text{
+  width: 300px;
+  height: 40px;
+  border: 1px solid rgb(230, 230, 230);
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  font-family: $roboto-mono;
+  border-radius: 15px;
+  background-color: rgb(230, 230, 230);
+  text-align: center;
+}
+
+@mixin button-style{
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgb(230, 230, 230);
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: $white;
+  font-family: $roboto;
+  border-radius: 20px;
+  background-color: $primarycolor;
+}
+
+body {
+  background-color: $bgcolor;
+  color: $dark;
+}
+
+.main-card{
+  align-items: center;
+  background-color: $white;
+  @include flex-column;
+  padding: 50px 30px;
+  border-radius: 10px;
+  width: 800px;
+  min-width: 400px;
+  margin: 130px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  h1{
+    font-family: $roboto;
+    color: $primarycolor;
+  }
+}
+
+
+.select-temp{
+  @include flex-row;
+  align-items: center;
+  background-color: $primarycolor;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  p{
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: $white;
+  }
+}
+
+.temp-container{
+  @include flex-row;
+  font-family: $roboto;
+}
+
+.change-color{
+  @include flex-column;
+  align-items: center;
+}
+
+.temp{
+  @include flex-column;
+  margin: 30px;
+}
+
+select{
+  width: 200px;
+  height: 30px;
+  margin: 0px 20px;
+  background-color: $secondcolor;
+  color: $white;
+  border-radius: 10px;
+  font-family: $roboto-mono;
+  border: none;
+}
+
+label{
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: $primarycolor;
+  text-align: center;
+  font-family: $roboto;
+}
+
+input[type="number"], input[type="text"] {
+  @include input-text;
+}
+input[type="number"]:focus{
+  border: 2px solid $secondcolor;
+}
+input[type="text"]:focus{
+  border: 2px solid $secondcolor;
+}
+
+.temp-container p{
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: $primarycolor;
+  font-size: 20px;
+}
+
+.change-color button{
+  @include button-style;
+}
+.temp-container button{
+  @include button-style;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.change-color button:hover {
+  background-color: $secondcolor;
+  cursor: pointer;
+}
+.temp-container button:hover{
+  background-color: red;
+  cursor: pointer;
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .main-card {
+    width: 60%;
+  }
+  .select-temp{
+    width: 60%;
+    justify-content: center;
+  }
+}
