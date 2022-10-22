@@ -1,3 +1,3 @@
 # Preview homework-js-temprature
 
-https://giezkavebya.github.io/homework-js-temprature/
+https://giezkavebya.github.io/js-temprature-converter/
